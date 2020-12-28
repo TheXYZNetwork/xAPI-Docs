@@ -1,2 +1,2 @@
 # xAPI-Docs
-The documentation for The XYZ Network's API V2
+The documentation for The XYZ Network's API V2.
