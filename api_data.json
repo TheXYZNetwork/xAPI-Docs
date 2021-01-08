@@ -78,7 +78,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "./routes/discord.js",
+    "filename": "routes/discord.js",
     "groupTitle": "Discord_Data"
   },
   {
@@ -173,7 +173,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "./routes/jobtracker.js",
+    "filename": "routes/jobtracker.js",
     "groupTitle": "Jobtracker_Data"
   },
   {
@@ -238,7 +238,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "./routes/stats.js",
+    "filename": "routes/stats.js",
     "groupTitle": "Statistics"
   },
   {
@@ -309,7 +309,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "./routes/badges.js",
+    "filename": "routes/badges.js",
     "groupTitle": "User_Data"
   },
   {
@@ -394,7 +394,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "./routes/xadmin.js",
+    "filename": "routes/xadmin.js",
     "groupTitle": "User_Data"
   },
   {
@@ -458,7 +458,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "./routes/playtime.js",
+    "filename": "routes/playtime.js",
     "groupTitle": "User_Data"
   },
   {
@@ -555,7 +555,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "./routes/xadmin.js",
+    "filename": "routes/xadmin.js",
     "groupTitle": "User_Data"
   },
   {
@@ -605,13 +605,13 @@
       }
     },
     "version": "0.0.0",
-    "filename": "./routes/xadmin.js",
+    "filename": "routes/xadmin.js",
     "groupTitle": "User_Data"
   },
   {
     "type": "get",
     "url": "/:server/users/:id",
-    "title": "Request User DarkRP info",
+    "title": "Request User DarkRP Info",
     "name": "users",
     "group": "User_Data",
     "parameter": {
@@ -662,7 +662,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "./routes/darkrp.js",
+    "filename": "routes/darkrp.js",
     "groupTitle": "User_Data"
   },
   {
@@ -733,7 +733,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "./routes/xadmin.js",
+    "filename": "routes/xadmin.js",
     "groupTitle": "User_Data"
   },
   {
@@ -797,13 +797,13 @@
       }
     },
     "version": "0.0.0",
-    "filename": "./routes/profile.js",
+    "filename": "routes/profile.js",
     "groupTitle": "User_Data"
   },
   {
     "type": "get",
     "url": "/:server/whitelists/:team",
-    "title": "Request User Badges",
+    "title": "Request Whitelisted Users",
     "name": "whitelists",
     "group": "Whitelist_Data",
     "parameter": {
@@ -847,7 +847,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "./routes/whitelists.js",
+    "filename": "routes/whitelists.js",
     "groupTitle": "Whitelist_Data"
   }
 ]
