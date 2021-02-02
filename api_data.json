@@ -802,6 +802,56 @@
   },
   {
     "type": "get",
+    "url": "/:server/whitelisted/:id",
+    "title": "Request Users Whitelists",
+    "name": "whitelisted",
+    "group": "Whitelist_Data",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "server",
+            "description": "<p>Server name.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>User SteamID64.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "result",
+            "description": "<p>Result.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String[]",
+            "optional": false,
+            "field": "result.whitelists",
+            "description": "<p>Jobs user is whitelisted to.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "routes/whitelists.js",
+    "groupTitle": "Whitelist_Data"
+  },
+  {
+    "type": "get",
     "url": "/:server/whitelists/:team",
     "title": "Request Whitelisted Users",
     "name": "whitelists",
