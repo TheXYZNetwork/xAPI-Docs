@@ -1,6 +1,174 @@
 define({ "api": [
   {
     "type": "get",
+    "url": "/:server/xadmin/users/:type/:usergroup",
+    "title": "Request Users With Usergroup",
+    "permission": [
+      {
+        "name": "developer"
+      }
+    ],
+    "name": "users_usergroup",
+    "group": "Developer_Endpoints",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "server",
+            "description": "<p>Server name.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "allowedValues": [
+              "\"sug\"",
+              "\"ug\""
+            ],
+            "optional": false,
+            "field": "type",
+            "description": "<p>Secondary usergroup or usergroup.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "usergroup",
+            "description": "<p>Usergroup to search.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "result",
+            "description": "<p>Result.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String[]",
+            "optional": false,
+            "field": "result.users",
+            "description": "<p>Users with usergroup.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "routes/xadmin.js",
+    "groupTitle": "Developer_Endpoints"
+  },
+  {
+    "type": "get",
+    "url": "/:server/xsits/:time/:id",
+    "title": "Request xSits Data",
+    "permission": [
+      {
+        "name": "developer"
+      }
+    ],
+    "name": "xsits",
+    "group": "Developer_Endpoints",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "server",
+            "description": "<p>Server name.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "allowedValues": [
+              "\"alltime\"",
+              "\"thisweek\"",
+              "\"lastweek\""
+            ],
+            "optional": false,
+            "field": "time",
+            "description": "<p>Time period to fetch data for.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "id",
+            "description": "<p>User to fetch data for.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "result",
+            "description": "<p>Result.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "result.sits",
+            "description": "<p>Sits.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "result.sits.creator",
+            "description": "<p>Creator SteamID64.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "result.sits.claimer",
+            "description": "<p>Claimer SteamID64.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "result.sits.reason",
+            "description": "<p>Reason for sit.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "result.sits.staffonline",
+            "description": "<p>Staff online (parse as JSON array!).</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "result.sits.created",
+            "description": "<p>Time created (UNIX).</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "routes/xsits.js",
+    "groupTitle": "Developer_Endpoints"
+  },
+  {
+    "type": "get",
     "url": "/xsuitelink/:type/:id",
     "title": "Request User xSuite Link",
     "name": "xsuitelink",
