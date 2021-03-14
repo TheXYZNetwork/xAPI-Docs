@@ -280,7 +280,6 @@ define({ "api": [
               "\"sd\"",
               "\"fbi\"",
               "\"swat\"",
-              "\"usms\"",
               "\"firerescue\"",
               "\"terrorist\"",
               "\"mafia\""
