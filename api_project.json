@@ -7,6 +7,10 @@
     "title": "Auth",
     "content": "<h2>API Key Auth</h2>\n<p>As xAPI uses <a href=\"https://github.com/zenlor/node-apikey\">node-apikey</a> you can use any of the listed methods of including your API Key.</p>\n<h2>Getting API Key</h2>\n<p>Get your API Key on the <a href=\"https://thexyznetwork.xyz/settings/\">XYZ settings page</a>. Make sure to keep this a secret.</p>\n"
   },
+  "footer": {
+    "title": "OS Libraries",
+    "content": "<h2>Open Source Libraries used by xAPI</h2>\n<html>\n<body>\n<style>\n/*\nbased on: https://codepen.io/DavidKern/pen/PwzYvv\n*/\n@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);\n<p>body {\nbackground: #fff;\ncolor: #000;\nfont-family: 'Lato', Arial, sans-serif;\n}</p>\n<p>h1 {\nfont-family: &quot;proxima-nova&quot;,sans-serif;\nletter-spacing: -0.01em;\nfont-weight: 700;\nfont-style: normal;\nfont-size: 60px;\nmargin-left: -3px;\nline-height: 1em;\ncolor: #000;\ntext-align: center;\nmargin-bottom: 8px;\ntext-rendering: optimizeLegibility;\n}</p>\n<p>table {\nwidth: 80%;\nmargin: auto;\n}</p>\n<p>table, th, td {\nborder: 1px solid #000;\nborder-collapse: collapse;\n}</p>\n<p>th {\nbackground-color: #ddd\n}</p>\n<p>th, td {\npadding: 15px;\n}\n</style></p>\n<table><thead><tr><th class=\"string\">author</th><th class=\"string\">link</th><th class=\"string\">license type</th><th class=\"string\">name</th></tr></thead><tbody><tr><td class=\"string\">aliem</td><td class=\"string\">https://github.com/aliem/node-apikey.git</td><td class=\"string\">MIT</td><td class=\"string\">apikey</td></tr><tr><td class=\"string\">TJ Holowaychuk</td><td class=\"string\">git://github.com/visionmedia/debug.git</td><td class=\"string\">MIT</td><td class=\"string\">debug</td></tr><tr><td class=\"string\">Matthew Eernisse</td><td class=\"string\">git://github.com/mde/ejs.git</td><td class=\"string\">Apache-2.0</td><td class=\"string\">ejs</td></tr><tr><td class=\"string\">TJ Holowaychuk</td><td class=\"string\">git+https://github.com/expressjs/express.git</td><td class=\"string\">MIT</td><td class=\"string\">express</td></tr><tr><td class=\"string\">Nathan Friedly</td><td class=\"string\">git+https://github.com/nfriedly/express-slow-down.git</td><td class=\"string\">MIT</td><td class=\"string\">express-slow-down</td></tr><tr><td class=\"string\">Jonathan Ong</td><td class=\"string\">git+https://github.com/jshttp/http-errors.git</td><td class=\"string\">MIT</td><td class=\"string\">http-errors</td></tr><tr><td class=\"undefined\"></td><td class=\"string\">git+https://github.com/expressjs/morgan.git</td><td class=\"string\">MIT</td><td class=\"string\">morgan</td></tr><tr><td class=\"string\">Felix Geisendörfer</td><td class=\"string\">git+https://github.com/mysqljs/mysql.git</td><td class=\"string\">MIT</td><td class=\"string\">mysql</td></tr><tr><td class=\"string\">Peter Rottmann</td><td class=\"string\">git+https://github.com/apidoc/apidoc.git</td><td class=\"string\">MIT</td><td class=\"string\">apidoc</td></tr><tr><td class=\"string\">Yaniv Kessler</td><td class=\"string\">git+https://github.com/ironSource/license-report.git</td><td class=\"string\">MIT</td><td class=\"string\">license-report</td></tr></tbody></table>\n</body>\n</html>\n"
+  },
   "template": {
     "withCompare": false,
     "withGenerator": true
@@ -16,7 +20,7 @@
   "apidoc": "0.3.0",
   "generator": {
     "name": "apidoc",
-    "time": "2021-03-29T17:25:00.782Z",
+    "time": "2021-03-29T17:36:00.382Z",
     "url": "https://apidocjs.com",
     "version": "0.25.0"
   }
