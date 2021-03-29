@@ -969,6 +969,63 @@ define({ "api": [
   },
   {
     "type": "get",
+    "url": "/:server/whitelist/:job",
+    "title": "Request Job Information",
+    "name": "whitelist",
+    "group": "Whitelist_Data",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "server",
+            "description": "<p>Server name.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "job",
+            "description": "<p>Job command (returned by /whitelisted).</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "result",
+            "description": "<p>Result.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "result.name",
+            "description": "<p>The job name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "result.category",
+            "description": "<p>The job category.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "routes/whitelists.js",
+    "groupTitle": "Whitelist_Data"
+  },
+  {
+    "type": "get",
     "url": "/:server/whitelisted/:id",
     "title": "Request Users Whitelists",
     "name": "whitelisted",
