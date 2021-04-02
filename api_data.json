@@ -345,6 +345,134 @@
   },
   {
     "type": "get",
+    "url": "/:server/leaderboard/money",
+    "title": "Request Leaderboard",
+    "name": "leaderboard",
+    "group": "Leaderboard",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "server",
+            "description": "<p>Server name.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "result",
+            "description": "<p>Result.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "result.players",
+            "description": "<p>Total Players.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "result.players.uid",
+            "description": "<p>Player SteamID64.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "result.players.rpname",
+            "description": "<p>Player RPName.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "result.players.wallet",
+            "description": "<p>Player balance.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./routes/leaderboard.js",
+    "groupTitle": "Leaderboard"
+  },
+  {
+    "type": "get",
+    "url": "/:server/leaderboard/playtime",
+    "title": "Request Leaderboard",
+    "name": "leaderboard",
+    "group": "Leaderboard",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "server",
+            "description": "<p>Server name.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "result",
+            "description": "<p>Result.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "result.players",
+            "description": "<p>Total Players.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "result.players.userid",
+            "description": "<p>Player SteamID64.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "result.players.total",
+            "description": "<p>Player total time played.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "result.players.last",
+            "description": "<p>Player last time played (Unix).</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./routes/leaderboard.js",
+    "groupTitle": "Leaderboard"
+  },
+  {
+    "type": "get",
     "url": "/stats",
     "title": "Request Stats",
     "name": "stats",
