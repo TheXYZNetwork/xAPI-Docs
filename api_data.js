@@ -346,8 +346,8 @@ define({ "api": [
   {
     "type": "get",
     "url": "/:server/leaderboard/money",
-    "title": "Request Leaderboard",
-    "name": "leaderboard",
+    "title": "Request Money Leaderboard",
+    "name": "moneyleaderboard",
     "group": "Leaderboard",
     "parameter": {
       "fields": {
@@ -410,8 +410,8 @@ define({ "api": [
   {
     "type": "get",
     "url": "/:server/leaderboard/playtime",
-    "title": "Request Leaderboard",
-    "name": "leaderboard",
+    "title": "Request Playtime Leaderboard",
+    "name": "playtimeleaderboard",
     "group": "Leaderboard",
     "parameter": {
       "fields": {
